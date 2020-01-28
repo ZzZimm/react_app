@@ -22,7 +22,7 @@ function ListItem(props: $TSFixMe) {
           src={iconModify}
           alt="modify"
           onClick={() => {}}
-          className= "action"
+          className="action"
         ></img>
         <img
           src={iconValidate}
