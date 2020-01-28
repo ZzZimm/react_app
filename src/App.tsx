@@ -43,7 +43,7 @@ function App(): React.ReactElement {
   function sortByTitle() {
     const tmpListElem = [...listElem];
 
-    tmpListElem.sort((a: Task, b: Task) => {
+    tmpListElem.sort((a, b) => {
       if (!a.title || !b.title) return 0;
       if (a.title < b.title) return reverseSortTitle ? 1 : -1;
       if (a.title >= b.title) return reverseSortTitle ? -1 : 1;
