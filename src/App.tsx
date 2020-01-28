@@ -15,7 +15,7 @@ function App(): React.ReactElement {
     false
   );
 
-  function addElem(): void {
+  function addElem() {
     const tmpListElem = [...listElem];
     const title = window.prompt(
       "Enter task title: ",
@@ -33,14 +33,14 @@ function App(): React.ReactElement {
     setListElem(tmpListElem);
   }
 
-  function onDelete(index: number): void {
+  function onDelete(index: number) {
     const tmpListElem = [...listElem];
 
     tmpListElem.splice(index, 1);
     setListElem(tmpListElem);
   }
 
-  function sortByTitle(): void {
+  function sortByTitle() {
     const tmpListElem = [...listElem];
 
     tmpListElem.sort((a: Task, b: Task) => {
@@ -53,7 +53,7 @@ function App(): React.ReactElement {
     setReverseSortTitle(!reverseSortTitle);
   }
 
-  function sortByDescription(): void {
+  function sortByDescription() {
     const tmpListElem = [...listElem];
 
     tmpListElem.sort((a, b) => {
